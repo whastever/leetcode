@@ -26,8 +26,43 @@ class Tetris {
 
 	}
 
+	drawGrid(position=[]){
+		position.forEach(i=>{
+			this.ctx.fillRect(i[0],i[1],i[2],i[3])
+		})
+	}
+
 	// 基础元素
-	baseElement(){
+	baseElement(x,y,type){
+		// const fillRect = this.ctx.fillRect;
+		const { unit } = this.config;
+		switch (type){
+			case 1:{
+				this.drawGrid([[x,y,unit,unit*3],[x+unit,y+unit,unit,unit]]);
+				break;
+			}
+			case 2:{
+				this.drawGrid([[x,y,unit*2,unit*2]]);
+				break;
+			}
+			case 3:{
+				this.drawGrid([[x,y,unit*3,unit],[x+unit*2,y+unit,unit,unit]]);
+				break;
+			}
+			case 4:{
+				this.drawGrid([[x,y,unit*3,unit],[x,y+unit,unit,unit]]);
+				break;
+			}
+			case 5:{
+				this.drawGrid([[x,y,unit*2,unit],[x+unit,y+unit,unit*2,unit]]);
+				break;
+			}
+			case 6:{
+				this.drawGrid([[x,y,unit*2,unit],[x-unit,y+unit,unit*2,unit]]);
+				break;
+			}
+		}
+
 
 	}
 
