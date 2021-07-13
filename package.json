@@ -1,0 +1,25 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WHASTEVER/leetcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WHASTEVER/leetcode/issues"
+  },
+  "homepage": "https://github.com/WHASTEVER/leetcode#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
+}
