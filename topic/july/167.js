@@ -13,8 +13,6 @@ var twoSum = function(numbers, target) {
     if (diff < 0) l++
     else r--
   }
-
-
 }
 
 var twoSum1 = function(numbers, target) {
