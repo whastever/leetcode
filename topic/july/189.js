@@ -4,12 +4,12 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var rotate = function(nums, k) {
-  let l = nums.length,i=0;
-  while(i<(k%l)){
-    nums.unshift(nums.pop(nums[l-1]))
+  let l = nums.length, i = 0
+  while (i < (k % l)) {
+    nums.unshift(nums.pop(nums[l - 1]))
     i++
   }
-  console.log(nums);
+  console.log(nums)
 
 }
 

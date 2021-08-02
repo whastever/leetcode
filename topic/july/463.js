@@ -8,7 +8,7 @@ var islandPerimeter = function(grid) {
   for (let i = 0; i < m; ++i) {
     for (let j = 0; j < n; ++j) {
       let isLand = grid[i][j]
-      console.log([i,j],ans);
+      console.log([i, j], ans)
       if (isLand) {
         let top = grid[i][j - 1] ? -1 : 1
         let left = (grid[i - 1] || [])[j] ? -1 : 1
