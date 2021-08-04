@@ -12,5 +12,5 @@ var increasingTriplet = function(nums) {
 	return false;
 }
 
-const a = [20,100,10,12,5,13];
+let a = [20,100,10,12,5,13];
 console.log(increasingTriplet(a));
